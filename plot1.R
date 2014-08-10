@@ -1,0 +1,10 @@
+#household_power_consumption <- read.csv("C:/Users/DINESH_R_C/Desktop/Trainings/Coursera/courses/04_ExploratoryAnalysis/Assignments/household_power_consumption.txt", sep=";", stringsAsFactors=FALSE)
+#hpc <- subset(household_power_consumption,Date > "2007-01-31" & Date < "2007-02-03")
+#hpc$Date <- as.Date(hpc$Date,format="%d/%m/%y%y")
+#hpc$Date <-strptime(paste(hpc$Date,hpc$Time), "%Y-%m-%d %H:%M:%S")
+png(file="plot1.png")
+#hist(subset(household_power_consumption$Global_active_power, household_power_consumption$Date > 2007-02-01 & household_power_consumption$Date < 2007-02-03),col="Red",main="Global Active Power",xlab = "Global Active Power (Kilowatts)")
+#hpc$Global_active_power <- as.numeric(as.character(hpc$Global_active_power))
+hist(hpc$Global_active_power,col="Red",main="Global Active Power",xlab = "Global Active Power (Kilowatts)")
+dev.off()
+

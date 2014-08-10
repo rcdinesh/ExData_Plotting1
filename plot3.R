@@ -1,0 +1,5 @@
+png(file="plot3.png")
+with(hpc,plot(Date, Sub_metering_1,type="l",ylab = "Global Active Power (Kilowatts)"))
+with(hpc,lines (Date, Sub_metering_2  ,col="red"))
+with(hpc,lines (Date, Sub_metering_3  ,col="blue"))
+dev.off()
